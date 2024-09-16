@@ -9,6 +9,17 @@ namespace s11215103.Controllers
             ViewBag.DataTime = DateTime.Now;
             ViewBag.title = "徐嘉瑋的首頁";
            return View();
-        }   
+        }
+        public IActionResult HTML()
+        {
+            // 這裡可以返回 HTML 頁面的視圖
+            return View();
+        }
+
+        public IActionResult CSS()
+        {
+            // 這裡可以返回 CSS 頁面的視圖
+            return View();
+        }
     }
 }
