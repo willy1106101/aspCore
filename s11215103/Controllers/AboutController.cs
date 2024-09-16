@@ -6,9 +6,17 @@ namespace s11215103.Controllers
     {
         public IActionResult Index()
         {
-            
             ViewBag.DataTime = DateTime.Now;
             ViewBag.title = "徐嘉瑋-首頁";
+            return View();
+        }
+        public IActionResult HTML()
+        {
+            return View();
+        }
+
+        public IActionResult CSS()
+        {
             return View();
         }
     }

@@ -10,7 +10,6 @@ namespace s11215103.Controllers
             ViewBag.DataTime = DateTime.Now;
             ViewBag.title = "徐嘉瑋的首頁";
            return View();
-        }
-
+        }   
     }
 }
