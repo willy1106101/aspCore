@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using s11215103.Models;
 
 namespace s11215103.Controllers
 {
@@ -21,5 +22,19 @@ namespace s11215103.Controllers
             // 這裡可以返回 CSS 頁面的視圖
             return View();
         }
+        public IActionResult PeopleList()
+        {
+            IList<People> pList =
+            [
+                new People { 帳號 = "ysp", 性別 = "男", 身高 = 165, 體重 = 70.5f },
+                new People { 帳號 = "mary", 性別 = "女", 身高 = 165, 體重 = 70.5f },
+                new People { 帳號 = "peter", 性別 = "男", 身高 = 190, 體重 = 65.5f },
+                new People { 帳號 = "jeny", 性別 = "女", 身高 = 155, 體重 = 40.5f },
+            ];
+            foreach (var p in pList)
+                p.計算標準體重();
+            return View(pList);
+        }
+
     }
 }
