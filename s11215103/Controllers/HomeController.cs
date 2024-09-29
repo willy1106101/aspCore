@@ -32,7 +32,10 @@ namespace s11215103.Controllers
                 new People { 帳號 = "jeny", 性別 = "女", 身高 = 155, 體重 = 40.5f },
             ];
             foreach (var p in pList)
+            {
                 p.計算標準體重();
+                p.計算BMI();
+            }
             return View(pList);
         }
 
