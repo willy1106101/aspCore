@@ -26,10 +26,11 @@ namespace s11215103.Controllers
         {
             IList<People> pList =
             [
+                new People { 帳號 = "徐嘉瑋", 性別 = "男", 身高 = 175, 體重 = 50.5f },
                 new People { 帳號 = "ysp", 性別 = "男", 身高 = 165, 體重 = 70.5f },
                 new People { 帳號 = "mary", 性別 = "女", 身高 = 165, 體重 = 70.5f },
                 new People { 帳號 = "peter", 性別 = "男", 身高 = 190, 體重 = 65.5f },
-                new People { 帳號 = "jeny", 性別 = "女", 身高 = 155, 體重 = 40.5f },
+                new People { 帳號 = "jeny", 性別 = "女", 身高 = 155, 體重 = 40.5f },      
             ];
             foreach (var p in pList)
             {
