@@ -1,0 +1,24 @@
+﻿@model IEnumerable<s11215103.Models.People>
+
+@{
+    ViewData["Title"] = "Bootstrap";
+}
+
+<h1>Bootstrap</h1>
+
+<link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+<div class="container">
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-xs-12  col-md-4  col-lg-3  col-xl-2  mt-1 p-3 " style="float:left">
+                <div class="img-thumbnail">
+                    <img src="~/images/@(item.帳號).jpg" class="rounded" style="height:210px;" />
+                    <h3 class="text-info">帳號：@item.帳號</h3>
+                    <p>身高：@item.身高 公分</p>
+                    <p>體重：@item.體重 公斤</p>
+                </div>
+            </div>
+        }
+    </div>
+</div>

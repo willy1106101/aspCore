@@ -1,0 +1,45 @@
+﻿@model IEnumerable<s11215103.Models.Food>
+@{
+    ViewData["Title"] = "FoodList";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<table class="table" border="1">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.編號)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.名稱)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.單價)
+            </th>
+            <th>
+                圖示
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.編號)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.名稱)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.單價)
+                </td>
+                <td>
+                    <img src="~/images/@(item.名稱).jpg" width="100px" />
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
