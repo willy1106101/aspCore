@@ -49,6 +49,9 @@ namespace s11215103.Controllers
                 new People { 帳號 = "peter", 性別 = "女", 身高 = 165, 體重 = 70.5f },
                 new People { 帳號 = "mary", 性別 = "男", 身高 = 190, 體重 = 65.5f },
                 new People { 帳號 = "jeny", 性別 = "女", 身高 = 155, 體重 = 40.5f },
+                new People { 帳號 = "deny", 性別 = "男", 身高 = 155, 體重 = 40.5f },
+                new People { 帳號 = "ketty", 性別 = "女", 身高 = 155, 體重 = 40.5f },
+                new People { 帳號 = "ray", 性別 = "男", 身高 = 155, 體重 = 40.5f },
             ];
             foreach (var p in pList)
             {
